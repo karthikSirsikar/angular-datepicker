@@ -1,12 +1,15 @@
 {
-  "name": "fzn-angular-datepicker",
+  "name": "kar-angular-datepicker",
   "version": "0.0.1",
-  "homepage": "https://github.com/FauzanKhan/angular-datepicker",
+  "homepage": "https://github.com/karthikSirsikar/angular-datepicker/settings",
   "authors": [
     "FauzanKhan <fauzankhan93@gmail.com>"
   ],
   "description": "An elegant, easily customizable dropdown in Angular",
-  "main": ["js/datepicker.js", "scss/datepicker.scss"],
+  "main": [
+    "js/datepicker.js",
+    "scss/datepicker.scss"
+  ],
   "moduleType": [
     "globals"
   ],
@@ -31,8 +34,8 @@
     "css/*",
     "js/demo.js"
   ],
-  "dependencies" : {
-     "jquery": ">=1.11.3",
-     "angular": ">=1.1.0"
+  "dependencies": {
+    "jquery": ">=1.11.3",
+    "angular": ">=1.1.0"
   }
 }

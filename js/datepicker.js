@@ -395,7 +395,13 @@ function fznDatePicker ($log, $document, $filter) {
             }
 
             scope.find('.datepicker-days tbody').empty().append(html.join(''));
-            scope.find(".datepicker-days tbody").prepend('<tr class="days"><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td><td>Sun</td></tr>')
+
+            if(scope.language == 'el') {
+                scope.find(".datepicker-days tbody").prepend('<tr class="days"><td>Δευ</td><td>Τρ</td><td>Τετ</td><td>Πέμ</td><td>Παρ</td><td>Σάβ</td><td>Κυρ</td></tr>');
+            }
+            else {
+                scope.find(".datepicker-days tbody").prepend('<tr class="days"><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td><td>Sun</td></tr>');
+            }
 
             var currentYear = scope.viewDate.getFullYear();
 
