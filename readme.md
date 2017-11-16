@@ -2,6 +2,7 @@
 An elegant, easily customizable datepicker in Angular built on top of [Datepicker by fulup-bzh](https://github.com/fulup-bzh/DatePicker)
 
 ### Description
+*forked from  FauzanKhan/angular-datepicker for Localizaton
 * An angular directive for datepicker.
 * Easily customizable, elegant design.
 * Works well with/without Foundation & Bootstrap.
