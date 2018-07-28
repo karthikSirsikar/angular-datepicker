@@ -445,7 +445,6 @@ function fznDatePicker ($log, $document, $filter) {
 
         // Place picker on the screen [need to be fixes to handle exceptions]
         scope.place = function(){
-            debugger;
             scope.picker.css({
                 top:    element.children('.date-display')[0].offsetTop + element.children('.date-display')[0].clientHeight + 'px',
                 left:   element[0].offsetLeft + 'px',
@@ -641,7 +640,6 @@ function fznDatePicker ($log, $document, $filter) {
 
         // input field was selected
         scope.displayPicker = function (elem) {
-            debugger;
           if (!scope.picker) {
               return;
           }
