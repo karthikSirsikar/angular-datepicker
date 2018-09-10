@@ -338,8 +338,11 @@ function fznDatePicker ($log, $document, $filter) {
             var endMonth  = scope.endDate.getMonth();
             var today = scope.today();
 
+            //Fallback to english if language is not available
+            var _dates = dates[scope.language] ? dates[scope.language] : dates['en'];
+
             // insert current date on top of picker table
-            scope.find('.datepicker-days th.date-switch').text(dates[scope.language].months[viewmonth]+' '+viewyear);
+            scope.find('.datepicker-days th.date-switch').text(_dates.months[viewmonth]+' '+viewyear);
 
             scope.updateNavArrows();
             scope.fillMonths();
