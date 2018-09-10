@@ -319,10 +319,13 @@ function fznDatePicker ($log, $document, $filter) {
         };
 
         scope.fillMonths= function(){
+            //Fallback to english if language is not available
+            var _dates = dates[scope.language] ? dates[scope.language] : dates['en'];
+
             var html = '',
                 i = 0;
             while (i < 12) {
-                html += '<span class="picker month">'+dates[scope.language].monthsShort[i++]+'</span>';
+                html += '<span class="picker month">'+_dates.monthsShort[i++]+'</span>';
             }
             scope.find('.datepicker-months td').html(html);
         };
